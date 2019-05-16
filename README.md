@@ -1,9 +1,13 @@
+![alt text](https://ibb.co/pyX10z4)
+
+
 >**:heavy_exclamation_mark: This library points to Checkout.com's classic API. **
 
 ### Requirements
 
 PHP 5 > 5.3.0
 
+Symfony 2.8 > 4
 ### How to use the library
 
 Add the dev-master version of Checkout Symfony Bundle into your project by using Composer or manually:
