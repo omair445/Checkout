@@ -1,4 +1,4 @@
-![alt text](https://ibb.co/pyX10z4)
+![alt text](https://i.ibb.co/6BsynPD/Screenshot-2019-05-16-at-7-08-08-PM.png)
 
 
 >**:heavy_exclamation_mark: This library points to Checkout.com's classic API. **
