@@ -69,7 +69,7 @@ In MyController.php
         return $this->forward('CheckoutPaymentBundle:Checkout:show', [
         'currency' => 'USD',
         'amount' => 10,
-        'customer_name' => 'Mannan',
+        'customer_name' => 'Omair Afzal',
         'cartObject' =>  null,
         'country_code' => 'US',
         'callback_url' => 'http://iam_callback_url.com',
