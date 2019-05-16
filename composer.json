@@ -1,0 +1,30 @@
+{
+    "name" : "checkout-bundle/checkout",
+    "description" : "Symfony Based Payment Gateway developed for Checkout.com",
+    "type" : "symfony-bundle",
+    "authors" : [{
+        "name" : "Omair Afzal",
+        "email" : "omair.mairy@gmail.com"
+    }],
+    "keywords" : [
+        "Symfony",
+        "Checkout",
+        "checkout.com",
+        "omair",
+        "afzal",
+        "omairafzal",
+        "cod",
+        "corediretion"
+    ],
+    "license" : [
+        "MIT"
+    ],
+    "require" : {
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Checkout\\PaymentBundle" : ""
+        }
+    },
+    "target-dir" : "Checkout/PaymentBundle"
+}
