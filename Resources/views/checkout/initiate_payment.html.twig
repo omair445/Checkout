@@ -1,0 +1,45 @@
+<form class="payment-form" name="checkout-form" method="POST" action="">
+    <script src="{{ env_url }}"></script>
+    <script>
+        var $cardTokenised = false;
+        Checkout.render({
+            publicKey: '{{ public_key }}',
+            value: {{ amount }},
+            currency: '{{ currency }}',
+            useCurrencyCode:true,
+            cardFormMode: 'cardTokenisation',
+            customerName: '{{ customer_name }}',
+            paymentMode: 'cards',
+            countryCode: '{{ country_code }}',
+            renderMode: 4,
+            buttonLabel: '{{ form_button_label }}',
+            title: 'Mannan',
+            logoUrl: '{{ logo }}',
+            formButtonLabel: '{{ form_button_label }}',
+            useMobileLightbox: true,//cardTokenised
+            lightboxDeactivated: function (event) {
+                if($cardTokenised == false)
+                    Checkout.open();
+            },
+            cardTokenised: function (event) {
+                $cardTokenised = true;
+            }
+        });
+
+        Checkout.addEventHandler(Checkout.Events.CARD_TOKENISED, function (event) {
+
+            $("#displayBox").show();
+            console.log($('.payment-form').serialize());
+            setTimeout(
+                function()
+                {
+                    $('.payment-form').submit();
+                }, 2000);
+        });
+    </script>
+    <input type="hidden" name="payment_cart" value="{{ cart_object }}">
+</form>
+
+
+
+
