@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('CheckoutPaymentBundle:Default:index.html.twig');
+        return $this->render('@CheckoutPayment/Default/index.html.twig');
     }
 }
